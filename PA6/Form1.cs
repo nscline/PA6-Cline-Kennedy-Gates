@@ -10,11 +10,30 @@ using System.Windows.Forms;
 
 namespace PA6
 {
-    public partial class Form1 : Form
+    public partial class frmCWID : Form
     {
-        public Form1()
+        public frmCWID()
         {
             InitializeComponent();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmMain myForm = new frmMain(txtCWID.Text);
+            if(myForm.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+            else
+            {
+                this.Close();
+            }
         }
     }
 }
