@@ -95,8 +95,22 @@ namespace PA6
         private void btnEdit_Click(object sender, EventArgs e)
         {
             Book myBook = (Book)lstBooks.SelectedItem;
-            frmEdit myForm = new frmEdit();
+            frmEdit myForm = new frmEdit(myBook, "edit", cwid);
             if(myForm.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+            else
+            {
+                LoadList();
+            }
+        }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            Book myBook = new Book();
+            frmEdit myForm = new frmEdit(myBook, "new", cwid);
+            if (myForm.ShowDialog() == DialogResult.OK)
             {
 
             }
