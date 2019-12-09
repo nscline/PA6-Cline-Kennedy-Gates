@@ -105,7 +105,6 @@
             this.txtCopiesData.Name = "txtCopiesData";
             this.txtCopiesData.Size = new System.Drawing.Size(184, 29);
             this.txtCopiesData.TabIndex = 7;
-            this.txtCopiesData.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lblCopies
             // 
@@ -156,6 +155,7 @@
             this.lstBooks.Name = "lstBooks";
             this.lstBooks.Size = new System.Drawing.Size(190, 388);
             this.lstBooks.TabIndex = 12;
+            this.lstBooks.SelectedIndexChanged += new System.EventHandler(this.lstBooks_SelectedIndexChanged);
             // 
             // pbCover
             // 
@@ -173,6 +173,7 @@
             this.btnRent.TabIndex = 14;
             this.btnRent.Text = "Rent";
             this.btnRent.UseVisualStyleBackColor = true;
+            this.btnRent.Click += new System.EventHandler(this.btnRent_Click);
             // 
             // btnReturn
             // 
@@ -182,6 +183,7 @@
             this.btnReturn.TabIndex = 15;
             this.btnReturn.Text = "Return";
             this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
             // btnNew
             // 
@@ -200,6 +202,7 @@
             this.btnEdit.TabIndex = 17;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDelete
             // 
@@ -209,6 +212,7 @@
             this.btnDelete.TabIndex = 18;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnClose
             // 
@@ -249,6 +253,7 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmMain";
             this.Text = "Audio Book Rental System";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbCover)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
