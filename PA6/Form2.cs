@@ -20,14 +20,14 @@ namespace PA6
             InitializeComponent();
         }
 
-        private void frmMain_Load(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }
